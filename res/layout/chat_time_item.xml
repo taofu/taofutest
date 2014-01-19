@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ctt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/ticker_name_bg"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textColor="#ccffffff"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+</FrameLayout>

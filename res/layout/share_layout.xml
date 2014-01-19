@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000" >
+
+        <RelativeLayout
+            android:id="@+id/share_content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="42dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/share_song_name"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:gravity="center"
+                android:shadowColor="#FFFFFFFF"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="歌曲名字"
+                android:textColor="#FF555555"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/share_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/share_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_sub"
+                    android:scaleType="fitCenter" />
+
+                <LinearLayout
+                    android:id="@+id/send_buttons_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/share_target"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:shadowColor="#FFFFFFFF"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="分享到 *** "
+                        android:textColor="#FF555555"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/share_button_commit"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="15dp"
+                        android:layout_toRightOf="@id/share_target"
+                        android:background="@drawable/draw_round_tangle_jing_green"
+                        android:shadowColor="#FF1c3214"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="发送"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/share_button_cancel"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/register_cancel"
+                        android:shadowColor="#FFFFFFFF"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="取消"
+                        android:textColor="#FF666666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/share_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:gravity="top|left"
+                android:padding="20dp"
+                android:text="这首歌很好听，分享给大家一起享受~"
+                android:textColor="@color/black_text"
+                android:background="@drawable/share_edit_text_bg"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/share_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#EF393939"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/share_renren_button"
+                style="@style/share_button_style"
+                android:text="人人网" />
+
+            <TextView
+                android:id="@+id/share_sina_weibo_button"
+                style="@style/share_button_style"
+                android:text="新浪微博" />
+
+            <TextView
+                android:id="@+id/share_tencent_weibo_button"
+                style="@style/share_button_style"
+                android:text="腾讯微博"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/share_micro_message_friends_button"
+                style="@style/share_button_style"
+                android:text="微信朋友圈" />
+
+            <TextView
+                android:id="@+id/share_micro_message_button"
+                style="@style/share_button_style"
+                android:text="微信会话" />
+
+            <TextView
+                android:id="@+id/share_jing_button"
+                style="@style/share_button_style"
+                android:text="分享给好友" />
+
+            <TextView
+                android:id="@+id/share_cancel"
+                style="@style/share_button_style"
+                android:background="@drawable/draw_round_tangle_gray"
+                android:text="取消分享" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

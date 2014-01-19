@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jingfm.customer_views.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resize_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <com.jingfm.customer_views.DragRefreshListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="60dp"
+                android:background="#00000000"
+                android:cacheColorHint="#00000000"
+                android:divider="@android:color/transparent"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+                android:listSelector="#000000"
+                android:scrollingCache="true" />
+
+            <View
+                android:id="@+id/view_buttom_margin_close"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <View
+                android:id="@+id/view_buttom_margin_open"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_edit_shell"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom" >
+
+            <com.jingfm.customer_views.CustomSlidingDrawer
+                android:id="@+id/chat_edit_sliding_drawer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:content="@+id/emoji_view_container"
+                android:handle="@+id/chat_edit_container"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@id/chat_edit_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#88000000" >
+
+                    <EditText
+                        android:id="@+id/chat_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="52dp"
+                        android:layout_marginRight="60dp"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:hint="Send your message here"
+                        android:imeOptions="actionSend"
+                        android:inputType="text"
+                        android:singleLine="false"
+                        android:textColor="#FFAAAAAA"
+                        android:textColorHint="#AAAAAAAA"
+                        android:windowSoftInputMode="adjustResize" />
+
+                    <Button
+                        android:id="@+id/emoji_button"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/emoji_button" />
+
+                    <ImageView
+                        android:id="@+id/send_button"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@color/jing_green"
+                        android:src="@drawable/chat_send_button" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/emoji_view_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.jingfm.customer_views.MyViewPager
+                        android:id="@+id/emoji_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#88000000" >
+                    </com.jingfm.customer_views.MyViewPager>
+                </FrameLayout>
+            </com.jingfm.customer_views.CustomSlidingDrawer>
+        </RelativeLayout>
+    </FrameLayout>
+
+</com.jingfm.customer_views.ResizeLayout>

@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/center_view_shadow_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginLeft="7dp"
+        android:background="#FF393939"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/center_view_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#232323"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/center_view_register_left_buton_layout"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" >
+
+                <com.jingfm.customer_views.BackImageButton
+                    android:id="@+id/center_view_back_buton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="#001c1c1c"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/back_btn"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/center_view_menu_buton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="#001c1c1c"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu_btn" />
+
+                <TextView
+                    android:id="@+id/center_view_new_message"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/draw_round_jing_green"
+                    android:gravity="center"
+                    android:shadowColor="#FF000000"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:textColor="#447731"
+                    android:textSize="0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/center_view_register_right_buton_layout"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" >
+
+                <ImageButton
+                    android:id="@+id/center_view_right_buton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="#001c1c1c"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/search" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/center_view_tilte_text_shell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/center_view_register_right_buton_layout"
+                android:layout_toRightOf="@id/center_view_register_left_buton_layout" >
+
+                <TextView
+                    android:id="@+id/center_view_tilte_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Jing"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/tilte_text_options_arrow"
+                    android:layout_toRightOf="@id/center_view_tilte_text"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:background="@drawable/title_text_options_arrow" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/center_view_layouts" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/shadow_black" />
+
+</FrameLayout>

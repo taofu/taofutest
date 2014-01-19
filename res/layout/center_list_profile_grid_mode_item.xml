@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="2dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/imageview00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:id="@+id/imageview_shell_00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="39dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/imageview01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:id="@+id/imageview_shell_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="39dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/imageview02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:id="@+id/imageview_shell_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="39dp" />
+    </FrameLayout>
+
+</LinearLayout>

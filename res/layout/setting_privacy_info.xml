@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/center_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Jing隐私权政策"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Jing各个平台的应用（以下简称Jing），包括但不限于网站（http://jing.fm），Jing(iOS应用、Android、360安全桌面应用）等, 非常重视对您的个人隐私保护。本条款是对Jing一般使用条款的补充。"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="隐私及保密原则"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Jing对用户隐私保护遵守以下原则：\n
+Jing不会因广告宣传、市场行销或出于其他目的将用户个人信息出租或出售给任何第三方。\n
+Jing不会将用户的联系方式与其他用户分享，除非双方均同意联系对方或双方已知悉对方联系方式。"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="用户注册信息的保护"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="用户注册Jing的服务时，须提供企业或个人信息。Jing收集企业或个人信息的目的是为了准确、有效的对用户提供服务。\n
+用户一旦注册成功，便成为Jing的合法用户，将得到一个密码和帐号。用户有义务保证密码和帐号的安全。用户对利用该密码和帐号所进行的一切活动负全部责任；因此所衍生的任何损失或损害，Jing不负担任何责任。"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="用户隐私及商业秘密的保护"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Jing承诺不会向与用户提交服务需求内容无关的第三人透露用户的隐私及商业秘密。\n
+用户需明确告知Jing用户商业秘密的范围、内容以及其交付给Jing的文件、资料是否涉及用户的商业秘密。Jing对用户的商业秘密采取特殊的保密措施。如用户未明确告知Jing其提供的文件、资料涉及其商业秘密，致使与用户提交服务需求相关的第三人知悉其内容，Jing不承担泄露其商业秘密的责任。"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Cookies"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="用户使用用户名和密码登陆Jing后，Jing使用Cookies 在会话过程中识别用户的身份。Cookies 存放在用户的计算机中，会话结束时将被自动删除。用户可以将此Cookies 保存在计算机中，通过开启“在这台电脑上自动登录”功能，为后续会话启用自动登录。这样，Cookies 就将以加密形式保存您的部分登录数据。如果用户选择自动登录，请注意该功能仅在首先保存 Cookies 的同一台计算机上有效。即无法在两台不同的计算机上实现自动登录。"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="条款修改"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Jing保留不经事先通知修改本隐私及保密条款的权利，隐私及保密条款一旦发生变动，将会在网站相关页面上通知并提示修改内容，并通过用户在注册过程中向Jing提供的电子邮件帐户，以电子邮件形式向用户发出通知。如果不同意所改动的内容，用户有权停止使用服务。如果用户继续使用Jing，则视为接受隐私及保密条款的变动。"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="联系我们"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="邮件：kf@jing.fm"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

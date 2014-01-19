@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_text" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/main_text"
+                    style="@style/normal_item_main_text" />
+
+                <TextView
+                    android:id="@+id/sub_text"
+                    style="@style/normal_item_sub_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+             <TextView
+            android:id="@+id/new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/menu_new_count_bg"
+            android:gravity="center"
+            android:shadowColor="#FF000000"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#447731"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        -->
+
+        <View
+            android:id="@+id/new_message"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/offline_round" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/search_select_left_arrow"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/white_sub" />
+
+</LinearLayout>

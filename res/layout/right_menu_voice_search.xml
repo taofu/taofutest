@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="12dp" >
+
+    <FrameLayout
+        android:id="@+id/voice_search_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white_text" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/main_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sub_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#FFcccccc"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/search_select_left_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/voice_search_animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white_text"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/item_deliver_line" />
+
+        <View
+            android:id="@+id/voice_search_round"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/voice_round" />
+
+        <View
+            android:id="@+id/voice_search_ring"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/voice_ring" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/voice_search_done_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/jing_green" 
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="说完了"
+            android:textColor="#FFffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="说完后点击这里进行搜索"
+            android:textColor="#FF239957"
+            android:textSize="9sp" />
+    </FrameLayout>
+
+</LinearLayout>

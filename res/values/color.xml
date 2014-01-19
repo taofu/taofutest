@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="jing_green">#FF2dcb73</color>
+    <color name="jing_gray">#cccccc</color>
+    <color name="jing_mask">#FF393939</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="black_text">#FF000000</color>
+    <color name="white_text">#ffffff</color>
+    <color name="white_sub">#AAAAAA</color>
+    <color name="offline">#CCCCCC</color>
+    <color name="main_bg">#282d2f</color>
+    <color name="dialogbackgournd">#EE000000</color>
+    <color name="center_bg">#393939</color>
+    <color name="menu_bg">#1c1d1e</color>
+    <color name="menu_text">#969ca2</color>
+    <color name="music_text">#999999</color>
+    <color name="artist_text">#f1f1f1</color>
+    <color name="play_consol_bg">#282c2d</color>
+    <color name="item_deliver_line">#f1f1f1</color>
+    <color name="close_btn_bg">#FFff2626</color>
+    <color name="consol_music_text">#bbbbbb</color>
+    <color name="consol_artist_text">#616161</color>
+    <color name="menu_part_item_bg">#232526</color>
+    <color name="menu_item_bg">#1e1e1e</color>
+    <color name="menu_item_press_bg">#232323</color>
+    <color name="fav_music_name">#FFaaaaaa</color>
+    <color name="fav_artist_name">#FF666666</color>
+    <color name="char_left">#AA000000</color>
+    <color name="char_right">#AAFFFFFF</color>
+    <color name="social_check_but_bg">#FF272828</color>
+    <color name="social_check_text">#a3a7ab</color>
+    
+    
+    <color name="link_music_bg">#FF343536</color>
+    
+    <color name="register_sex_uncheck">#FF999999</color>
+    <color name="register_sex_checked">#FF000000</color>
+
+    <color name="ticker_user_name_text">#FF555555</color>
+    <color name="ticker_share_text">#adadad</color>
+</resources>

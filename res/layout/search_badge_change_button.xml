@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/badge_image"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        android:indeterminateOnly="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/search_badge_change_style"/>
+
+    <TextView
+        android:id="@+id/badge_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/badge_image"
+        android:layout_below="@id/badge_image"
+        android:gravity="top"
+        android:textSize="12sp" />
+
+</RelativeLayout>

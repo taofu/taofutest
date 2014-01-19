@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF343536"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/top_head"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/social_check_but_bg"
+        android:gravity="right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/what_i_have"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/head_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:singleLine="true"
+                android:textColor="#FF666666"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/play_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white_text"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:background="@drawable/draw_round_tangle_jing_green"
+            android:text="@string/play_all" />
+    </FrameLayout>
+
+    <com.jingfm.customer_views.DragRefreshListView
+        android:id="@+id/list_view_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollingCache="true" />
+
+</LinearLayout>

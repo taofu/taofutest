@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/setting_view_avatar" />
+        <!-- TODO 定时关机 -->
+
+        <LinearLayout style="@style/settings_title_layout" >
+
+            <TextView
+                style="@style/settings_title_text"
+                android:text="定时关闭" />
+
+            <View style="@style/settings_title_deliver" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white_text">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" >
+
+                <View
+                    android:layout_width="230dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/jing_gray" />
+
+                <View
+                    android:id="@+id/seek_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/draw_round_jing_gray" />
+
+                <View
+                    android:id="@+id/seek_2"
+                    style="@style/settings_sleep_seek_shadow"
+                    android:layout_toRightOf="@id/seek_1" />
+
+                <View
+                    android:id="@+id/seek_3"
+                    style="@style/settings_sleep_seek_shadow"
+                    android:layout_toRightOf="@id/seek_2" />
+
+                <View
+                    android:id="@+id/seek_4"
+                    style="@style/settings_sleep_seek_shadow"
+                    android:layout_toRightOf="@id/seek_3" />
+
+                <View
+                    android:id="@+id/seek_5"
+                    style="@style/settings_sleep_seek_shadow"
+                    android:layout_toRightOf="@id/seek_4" />
+
+                <TextView
+                    android:id="@+id/seek_text_1"
+                    style="@style/settings_item_text"
+                    android:layout_below="@id/seek_1"
+                    android:layout_alignLeft="@id/seek_1"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginTop="15dp"
+                    android:text="关闭" />
+
+                <TextView
+                    android:id="@+id/seek_text_2"
+                    style="@style/settings_item_text"
+                    android:layout_alignBaseline="@id/seek_text_1"
+                    android:layout_alignBottom="@id/seek_2"
+                    android:layout_alignLeft="@id/seek_2"
+                    android:layout_marginLeft="-10dp"
+                    android:gravity="center"
+                    android:text="15分钟" />
+
+                <TextView
+                    android:id="@+id/seek_text_3"
+                    style="@style/settings_item_text"
+                    android:layout_alignBaseline="@id/seek_text_1"
+                    android:layout_alignBottom="@id/seek_3"
+                    android:layout_alignLeft="@id/seek_3"
+                    android:layout_marginLeft="-10dp"
+                    android:text="30分钟" />
+
+                <TextView
+                    android:id="@+id/seek_text_4"
+                    style="@style/settings_item_text"
+                    android:layout_alignBaseline="@id/seek_text_1"
+                    android:layout_alignBottom="@id/seek_4"
+                    android:layout_alignLeft="@id/seek_4"
+                    android:layout_marginLeft="-10dp"
+                    android:text="1小时" />
+
+                <TextView
+                    android:id="@+id/seek_text_5"
+                    style="@style/settings_item_text"
+                    android:layout_alignBaseline="@id/seek_text_1"
+                    android:layout_alignBottom="@id/seek_5"
+                    android:layout_alignLeft="@id/seek_5"
+                    android:layout_marginLeft="-5dp"
+                    android:text="2小时" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 辅助设置 -->
+
+        <LinearLayout style="@style/settings_title_layout" >
+
+            <TextView
+                style="@style/settings_title_text"
+                android:text="辅助设置" />
+
+            <View style="@style/settings_title_deliver" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_text"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_rotation_switch" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="封面旋转控制" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/rotateEnable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout style="@style/settings_item_layout" 
+                android:visibility="gone" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_rotation_switch" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="开启大字体显示" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/bigFoutEable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+
+            <View
+                style="@style/settings_item_deliver"
+                android:visibility="gone" />
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_headphone" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="耳机拔出时自动暂停" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/plugout_pause"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- TODO 音质选择 -->
+
+        <LinearLayout style="@style/settings_title_layout" >
+
+            <TextView
+                style="@style/settings_title_text"
+                android:text="音质选择" />
+
+            <View style="@style/settings_item_deliver" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white_text"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp" >
+
+                <View
+                    android:id="@+id/radio_2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/draw_round_jing_gray" />
+
+                <View
+                    android:id="@+id/radio_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/draw_round_jing_gray" />
+
+                <View
+                    android:id="@+id/radio_3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/draw_round_jing_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/radio_2"
+                    android:layout_toRightOf="@id/radio_1"
+                    android:background="@color/jing_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/radio_3"
+                    android:layout_toRightOf="@id/radio_2"
+                    android:background="@color/jing_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true" >
+
+                <TextView
+                    android:id="@+id/radio_text_1"
+                    style="@style/settings_item_text"
+                    android:layout_below="@id/radio_1"
+                    android:layout_marginLeft="0dp"
+                    android:text="128kbps" />
+
+                <TextView
+                    android:id="@+id/radio_text_2"
+                    style="@style/settings_item_text"
+                    android:layout_below="@id/radio_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="0dp"
+                    android:text="256kbps" />
+
+                <TextView
+                    android:id="@+id/radio_text_3"
+                    style="@style/settings_item_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/radio_3"
+                    android:layout_marginLeft="0dp"
+                    android:text="Automatic" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 提醒设置 -->
+
+        <LinearLayout style="@style/settings_title_layout" 
+            android:visibility="gone">
+
+            <TextView
+                style="@style/settings_title_text"
+                android:text="提醒设置" />
+
+            <View style="@style/settings_title_deliver" />
+        </LinearLayout>
+
+        <LinearLayout
+            
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_text"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_friends_likes" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="提醒你的好友谁也喜欢过" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/remind_who_love_enable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_peripheral_info" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="提醒周边信息，影视相关" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/remind_interrelated_enable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_musical_info" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="提醒乐器演奏信息" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/remind_instrument_enable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 社交网络 -->
+
+        <LinearLayout style="@style/settings_title_layout" >
+
+            <TextView
+                style="@style/settings_title_text"
+                android:text="社交网络" />
+
+            <View style="@style/settings_title_deliver" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_text"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_sns_renren" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="人人网" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/renren_enable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_sns_weibo" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="新浪微博" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/xina_enable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_sns_tencent_qq" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="腾讯微博" />
+
+                <com.jingfm.customer_views.JingSettingSwitch
+                    android:id="@+id/qq_enable"
+                    style="@style/settings_item_switch" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 个人信息 -->
+
+        <LinearLayout style="@style/settings_title_layout" >
+
+            <TextView
+                style="@style/settings_title_text"
+                android:text="个人信息" />
+
+            <View style="@style/settings_title_deliver" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_text"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/base_info_layout"
+                style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_basic_info" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="基础信息修改" />
+
+                <ImageView style="@style/settings_item_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout
+                android:id="@+id/password_layout"
+                style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_password_icon" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="修改密码" />
+
+                <ImageView style="@style/settings_item_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 系统相关 -->
+
+        <LinearLayout style="@style/settings_title_layout" >
+
+            <TextView
+                style="@style/settings_title_text"
+                android:text="系统相关" />
+
+            <View style="@style/settings_title_deliver" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_text"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/recommed_app_layout"
+                style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_suggest_app" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="推荐APP" />
+
+                <ImageView style="@style/settings_item_arrow" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/clear_layout"
+                style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_clear_cache" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="清除缓存" />
+
+                <ImageView style="@style/settings_item_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout
+                android:id="@+id/privacy_layout"
+                style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_privacy_policy" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="隐私政策" />
+
+                <ImageView style="@style/settings_item_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/settings_item_deliver" />
+
+            <RelativeLayout
+                android:id="@+id/about_us_layout"
+                style="@style/settings_item_layout" >
+
+                <ImageView
+                    style="@style/settings_item_icon"
+                    android:src="@drawable/setting_icon_about_us" />
+
+                <TextView
+                    style="@style/settings_item_text"
+                    android:text="关于我们" />
+
+                <ImageView style="@style/settings_item_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/close_btn_bg"
+            android:gravity="center"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="注销账号"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+</ScrollView>

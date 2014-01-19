@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="switchBtn_width">55dp</dimen>
+    <dimen name="switchBtn_height">22dp</dimen>
+    <dimen name="switchBtn_min_width">44dp</dimen>
+    <dimen name="switchBtn_text_size">30sp</dimen>
+    <dimen name="seekbar_pandding_top">0px</dimen>
+
+</resources>

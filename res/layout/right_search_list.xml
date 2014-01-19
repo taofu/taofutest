@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF393939" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FF232323"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <ImageView
+                android:id="@+id/search_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="#001c1c1c"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:hint="描述出你想听的音乐"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:textColor="#FF55595a"
+                android:textColorHint="#33FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.jingfm.customer_views.BackImageButton
+                android:id="@+id/right_view_back_buton"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@null" />
+        </LinearLayout>
+
+        <com.jingfm.customer_views.DragRefreshListView
+            android:id="@+id/nlg_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="#00000000"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:scrollingCache="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/shadow_black" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jing</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_0">大家都在听什么</string>
+    <string name="menu_1">好友中心</string>
+    <string name="menu_2">最优听者</string>
+    <string name="menu_3">猜你可能喜欢</string>
+    <string name="menu_4">我喜欢的音乐</string>
+    <string name="menu_5">本地缓存的音乐</string>
+    <string name="menu_6">音乐榜单</string>
+    <string name="menu_7">探索发现</string>
+    <string name="menu_8">消息中心</string>
+    <string name="menu_9">设置中心</string>
+    <string name="menu_10">推荐App</string>
+    <string name="menu_11">关闭程序</string>
+    <string name="menu_12">登录</string>
+    <string name="switch_text_on">on</string>
+    <string name="switch_text_off">off</string>
+    <string name="menu_my">用户名</string>
+    <string name="app_id">5135a236</string>
+    <string name="preference_key_iat_engine">iat_engine</string>
+    <string name="preference_default_iat_engine">sms</string>
+    <string name="preference_key_poi_province">poi_province</string>
+    <string name="preference_default_poi_province">全选</string>
+    <string name="preference_key_poi_city">poi_city</string>
+    <string name="preference_default_poi_city">全选</string>
+    <string name="preference_key_iat_rate">iat_rate</string>
+    <string name="preference_default_iat_rate">rate16k</string>
+
+    <string-array name="preference_entries_iat_engine">
+        <item>短信转写</item>
+        <item>地图搜索</item>
+        <item>热词搜索</item>
+        <item>视频搜索</item>
+    </string-array>
+    <string-array name="preference_values_iat_engine">
+        <item>sms</item>
+        <item>poi</item>
+        <item>vsearch</item>
+        <item>video</item>
+    </string-array>
+
+    <string name="music_text_deault">Jing 已经为你准备好，搜索你想听的</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="errcode_success">发送成功</string>
+	<string name="errcode_cancel">发送取消</string>
+	<string name="errcode_deny">发送被拒绝</string>
+	<string name="errcode_unknown">发送返回</string>
+	
+	<string name="register_email">邮箱</string>
+	<string name="register_renren">人人网</string>
+	<string name="register_weibo">微博</string>
+	<string name="register_type_main_text">选择注册的方式</string>
+	<string name="register_type_sub_text">Find a way to join Jing</string>
+	<string name="register_new_main_text">创建新的账户</string>
+	<string name="register_new_sub_text">Create your Jing account</string>
+	<string name="login_new_main_text">已有账号</string>
+	<string name="login_new_sub_text">Login with your account if you have</string>
+	<string name="register_cancel">稍后再说</string>
+	<string name="register_submit">提交</string>
+	<string name="register_name">你的名字</string>
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="login_type_main_text">选择登录的方式</string>
+	<string name="login_type_sub_text">Find a way to connect with Jing</string>
+	<string name="login_email">输入你的登录邮箱</string>
+	<string name="login_password">输入你的密码</string>
+	<string name="login_button">登录</string>
+	<string name="login_forgot_password_main_text">输入你的注册邮箱</string>
+	<string name="login_forgot_password_sub_text">Fill in your email address</string>
+	<string name="login_forgot_password_email">电子邮箱</string>
+	<string name="login_forgot_password_button">发送申请</string>
+	
+	<string name="user_online_total_time">已经听了 %1$02d 小时 %2$02d 分钟 %3$02d秒</string>
+	<string name="already_listen">已经听了</string>
+	<string name="hour">小时</string>
+	<string name="minute">分钟</string>
+	<string name="second">秒</string>
+	
+	
+	<string name="tips_text_is_buffering">Jing正在为您缓冲...</string>
+
+	<string name="playing_buttom_button_play">播放</string>
+	<string name="playing_buttom_button_download">缓存</string>
+	<string name="playing_buttom_button_loop">循环</string>
+	<string name="playing_buttom_button_share">分享</string>
+	
+    <string name="play_all">播放全部</string>
+	
+    <string name="music_explore_default_text">"选择现在你想收听的情绪"</string>
+    
+    <string name="setting_music_quality_128">128kbps</string>
+    <string name="setting_music_quality_256">256kbps</string>
+    <string name="setting_music_quality_auto">自动</string>
+    <string name="setting_text_edit_avatar">修改头像</string>
+    <string name="setting_text_edit_background_cover">修改封面</string>
+<!--     <string name="setting_text_edit_avatar">Edit My Avatar</string>
+    <string name="setting_text_edit_background_cover">Edit My Background Cover</string> -->
+    <string name="setting_text_connect_your_social_work">Connect Your Social Work</string>
+    <string name="setting_text_sina_weibo">Sina Weibo</string>
+    <string name="setting_text_tencent_qq">Tencent QQ</string>
+    <string name="setting_text_renren">Renren</string>
+    <string name="setting_text_quality_choice">Quality choice</string>
+    <string name="setting_text_automatic">Automatic</string>
+    <string name="setting_text_adjuvant_setting">Adjuvant Setting</string>
+    <string name="setting_text_rotation_switch">Rotation Switch</string>
+    <string name="setting_text_headphone">Headphone</string>
+    <string name="setting_text_language">Language</string>
+    <string name="setting_text_personal_info">Personal Info</string>
+    <string name="setting_text_basic_info">Basic Info</string>
+    
+</resources>

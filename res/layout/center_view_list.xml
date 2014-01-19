@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jingfm.customer_views.DragRefreshListView
+        android:id="@+id/list_view_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:footerDividersEnabled="false"
+        android:listSelector="#000000"
+        android:scrollingCache="true"
+        android:visibility="gone" />
+
+    <com.jingfm.customer_views.DragRefreshListView
+        android:id="@+id/list_view_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:footerDividersEnabled="false"
+    	    android:fadingEdge="none"
+        android:listSelector="#000000"
+        android:scrollingCache="true"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF343536"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="58dp" >
+
+        <LinearLayout
+            android:id="@+id/top_head"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/my_friends_check_but"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/social_check_but_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"
+                    android:src="@drawable/friends_list" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="好友中心"
+                    android:textColor="@color/social_check_text"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/friends_vertical_split" />
+            
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/social_check_but_bg" >
+
+                <LinearLayout
+                    android:id="@+id/social_check_but"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        android:src="@drawable/friends_ext" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="扩展好友"
+                        android:textColor="@color/social_check_text"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+		            android:id="@+id/new_message"
+		            android:layout_width="12dp"
+		            android:layout_height="12dp"
+		            android:layout_gravity="right|center_vertical"
+		            android:layout_marginBottom="10dp"
+		            android:layout_marginRight="10dp"
+		            android:background="@drawable/draw_round_jing_green"
+		            android:gravity="center"
+		            android:textColor="#447731"
+		            android:shadowColor="#FF000000"
+		            android:shadowDy="1"
+		            android:shadowRadius="1"
+		            android:textSize="0sp"
+		            android:textStyle="bold"
+		            android:visibility="gone"/>
+            </FrameLayout>
+            
+        </LinearLayout>
+
+        <View
+            android:id="@+id/anim_line"
+            android:layout_width="160dp"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"
+            android:background="#FF62a946" />
+        <View
+       		android:background="@color/white_sub"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+    <com.jingfm.customer_views.DragRefreshListView
+        android:id="@+id/list_view_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollingCache="true" />
+
+    <ListView
+        android:id="@+id/list_view_sns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/item_deliver_line"
+        android:dividerHeight="2dp"
+        android:fadingEdge="none"
+        android:visibility="gone"
+        android:footerDividersEnabled="false"
+        android:listSelector="#000000"
+        android:scrollingCache="true" />
+
+</LinearLayout>

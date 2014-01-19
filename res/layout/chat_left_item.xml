@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <View
+        android:id="@+id/ctt_arrow"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/chat_arrow_left" />
+
+    <TextView
+        android:id="@+id/ctt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_text"
+        android:lineSpacingExtra="2sp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/char_left"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ctt_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

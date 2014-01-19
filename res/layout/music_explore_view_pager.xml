@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp" 
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+       <!--  android:overScrollMode="never"
+        android:scrollbars="none" -->
+    <com.jingfm.customer_views.JingViewPager
+        android:id="@+id/music_explore_view_pager"
+    		android:background="#FF000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/music_explore_index_cursor_0"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/index_round_on" />
+
+        <View
+            android:id="@+id/music_explore_index_cursor_1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/index_round_off" />
+
+        <View
+            android:id="@+id/music_explore_index_cursor_2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/index_round_off" />
+    </LinearLayout>
+
+</FrameLayout>

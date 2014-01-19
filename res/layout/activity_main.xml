@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000" >
+
+    <FrameLayout
+        android:id="@+id/main_view_container_web"
+        android:layout_gravity="center"
+        android:layout_width="1dp"
+        android:layout_height="1dp" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_view_container_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_view_container_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-7dp">
+    </FrameLayout>
+    
+    <com.jingfm.customer_views.VisualizerViewMini 
+        android:id="@+id/visualizer_view_mini"
+        android:visibility="gone"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/guide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/main_view_container_music_info"
+        android:background="#CF2b2b2b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/main_view_container_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-7dp">
+    </FrameLayout>
+    
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <FrameLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <ImageButton
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+</FrameLayout>

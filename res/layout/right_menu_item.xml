@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white_text" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                style="@style/normal_item_icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+           		android:layout_marginRight="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/main_text"
+                    style="@style/normal_item_main_text"/>
+
+                <TextView
+                    android:id="@+id/sub_text"
+                    style="@style/normal_item_sub_text"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sub_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/item_could_play" />
+        
+        <ImageView
+            android:id="@+id/sub_icon_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="60dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:src="@drawable/button_add" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/item_deliver_line" />
+
+</LinearLayout>

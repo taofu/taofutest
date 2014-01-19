@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10" android:versionName="1.5.0" 
+    package="com.jingfm">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+    <!-- 权限 -->
+    <!-- 讯飞权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> 
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 讯飞权限 -->
+    
+	<!-- 微信权限 -->
+    <uses-permission android:name="com.tencent.mm.permission.MMOAUTH_CALLBACK" />
+    <uses-permission android:name="com.tencent.mm.permission.MM_MESSAGE" />
+    <!-- 微信权限 --> 
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+	
+    <!-- 小米推送权限 -->
+    <permission
+        android:name="com.jingfm.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.jingfm.permission.MIPUSH_RECEIVE" />
+    <!-- 小米推送权限 -->
+	
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.MainActivity" >
+		<!-- Talking Data		 -->
+		<meta-data android:value="anrd_hm" android:name="TD_CHANNEL_ID"/> 
+		<meta-data android:value="31EB8A0D6BC2A02AA18C8E698C56EFCD" android:name="TD_APP_ID"/> 
+		<!-- Talking Data		 -->
+        <activity
+            android:name="com.jingfm.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+              <intent-filter>
+                <action android:name="android.intent.action.SEARCH" >
+                </action>
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".background_model.JingService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="com.jingfm.Jing3rdPartLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jingfm.Jing3rdPartBindActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <receiver android:name=".background_model.AllReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+        
+         <activity
+            android:name="com.jingfm.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </activity>
+        <receiver
+            android:name="com.tencent.mm.sdk.plugin.MMPluginOAuth$Receiver"
+            android:permission="com.tencent.mm.oauth.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.sdk.plugin.Intent.ACTION_RESPONSE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.tencent.mm.sdk.channel.MMessage$Receiver"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.sdk.channel.Intent.ACTION_MESSAGE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver
+            android:name="com.tencent.mm.sdk.plugin.MMPluginOAuth$Receiver"
+            android:permission="com.tencent.mm.oauth.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.sdk.plugin.Intent.ACTION_RESPONSE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.tencent.mm.sdk.channel.MMessage$Receiver"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.sdk.channel.Intent.ACTION_MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name="com.xiaomi.mipush.sdk.PushServiceReceiver" >
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <!-- 小米推送模块 -->
+        
+        <!-- 微博登陆模块 -->
+        <activity android:name="com.weibo.sdk.android.keep.MainLoginActivity" />
+        <activity android:name="com.weibo.sdk.android.keep.MainShareActivity" />
+        <activity
+            android:name="com.weibo.sdk.android.keep.RequestMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.weibo.sdk.android.keep.ResponseMessageActivity" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_RESP_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.weibo.sdk.android.keep.APITypeListActivity" />
+        <activity android:name="com.weibo.sdk.android.keep.ShareActivity" />
+        <activity android:name="com.weibo.sdk.android.keep.BlogFunActivity" />
+        <activity android:name="com.weibo.sdk.android.keep.CallActivityV3" />
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>
+    WebSocket Test
+</title>
+<script type="text/javascript" src="http://jing.fm/assets/now.js"> 
+<!-- <script type="text/javascript" src="http://jing.fm/assets/now_headsets.js">-->
+</script>
+<script language="javascript" type="text/javascript">
+	
+    var f = true;
+    var text = 'fail : ready is fail';
+    var initLocation = window.location;
+    var nowSuccess;
+    function initNow(userID, nickName, verStr, atoken, nowTime) {
+		//alert('!!!!!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+        nowSuccess = 0;
+       	var NOW_URL = "http://zoro.jing.fm";
+        //var NOW_URL = "http://zoro.jing.fm:9999";
+        window.now = nowInitialize(NOW_URL, {});
+        now.ready(function() {
+            text = 'fail : only ready ok';
+            var arg = nowTime + "-" + nowSuccess;
+            now.connectionUnique(userID, nickName, arg,
+            function() {
+                //alert('!!!!!!!!!!!!!!!!!!!!!!1');
+                f = false;
+                nowSuccess = nowSuccess + 1;
+                //传参数
+                //location.href=Math.random()+"?socketOnConnect=1";
+                jingfm_android.connectedSuccess();
+            },
+            verStr, atoken);
+
+        });
+
+        now.receivePrivateMessage = function(message) {
+            //alert('@@@@@@@@@@@@'+message);
+            jingfm_android.receivePrivateMessage(message);
+        };
+        now.receiveTickerMessage = function(message) {
+            //alert('@@@@@@@@!!!!!!!!!!!!@@@@@@@@@@@@@');
+            //var messageObj = eval("("+message+")");
+			jingfm_android.receiveTickerMessage(message);
+        };
+        now.followListenResponseAuthorizeRefuse = function() {
+            jingfm_android.followListenResponseAuthorizeRefuse();
+        };
+        now.followListenResponseAuthorizeSuccess = function(message) {
+        	//alert('@@@@@@@@!!!!!!!!@'+message);
+			jingfm_android.followListenResponseAuthorizeSuccess(message);
+        };
+        now.receiveFollowListenMessage = function(id, message) {
+			jingfm_android.receiveFollowListenMessage(id, message);
+        };
+        now.followListenRequestAuthorize = function(id, nick, avatar) {
+			jingfm_android.followListenRequestAuthorize(id, nick, avatar);
+        };
+        now.followListenJoin = function(id, nick, avatar) {
+			jingfm_android.followListenJoin(id, nick, avatar);
+        };
+        now.followListenLeave = function(id, nick) {
+            jingfm_android.followListenLeave(id, nick);
+        }
+        now.followListenKickLeave = function(hostid){
+        		jingfm_android.followListenKickLeave(hostid);
+        }
+        now.followListenResponseFailOther = function(fid, fnick) {
+          jingfm_android.followListenResponseFailOther(fid, fnick);
+        }
+        now.disconnect = function(clientid) {
+            jingfm_android.disconnect(clientid);
+        }
+    }
+
+    function sendFollowListenMessage(uid, msg) {
+        now.sendFollowListenMessage(uid, msg);
+    }
+
+    function socketOnDisconnect() {
+    	jingfm_android.socketOnDisconnect();
+    }
+    
+</script>
+<h2>
+    WebSocket Test
+</h2>
+<div id="output">
+</div>
+
+</html>

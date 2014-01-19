@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF343536"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:id="@+id/search_friends_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/social_check_but_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:id="@+id/search_friends_button"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="left|center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search" />
+        
+        <EditText
+            android:id="@+id/search_friends_text"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:hint="搜索好友的名字"
+            android:textColorHint="@color/social_check_text"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/menu_text"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <View
+	      android:background="@color/item_deliver_line"
+	      android:layout_width="match_parent"
+	      android:layout_height="2dp"
+	      android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+    <com.jingfm.customer_views.DragRefreshListView
+        android:id="@+id/friends_search_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none"
+        android:scrollingCache="true" />
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+package com.jingfm.api.model;public class RecommendCmbtDTO {	private String rd;	public String getRd() {		return rd;	}	public void setRd(String rd) {		this.rd = rd;	}}

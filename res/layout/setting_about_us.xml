@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/center_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Jing"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Version 1.5.0 (Build 20131031)\n\n
+© 2013 Jing Inc."
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Jing是一款颠覆传统音乐搜索的新型智能音乐产品"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="首创自然语言描述搜索音乐新模式，在手机上打开Jing，用你的话描述出你想听到什么样的歌，比如“我想听有吉他和钢琴的流行音乐”、“我正在海边度假，想念远方的朋友”等等，然后就等着Jing喜出现吧！让音乐搜索回归最简单最直接的方式。"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

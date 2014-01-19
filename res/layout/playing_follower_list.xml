@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null" >
+
+    <View
+        android:id="@+id/follower_need_go_away"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" />
+
+    <LinearLayout
+        android:id="@+id/follower_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="46dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white_text"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp" >
+
+            <TextView
+                android:id="@+id/follower_title_main"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:shadowColor="#FFFFFFFF"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="Ta们正在跟听你"
+                android:textColor="#FF555555"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/follower_title_main"
+                android:gravity="top|center_horizontal"
+                android:text="They are following your music stream" />
+        </RelativeLayout>
+
+        <View style="@style/settings_item_deliver" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <GridView
+                android:id="@+id/follower_grid_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fadingEdgeLength="0dp"
+                android:gravity="center"
+                android:numColumns="3" />
+        </FrameLayout>
+
+        <View style="@style/settings_item_deliver" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/follower_button_cancel"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/register_cancel"
+                    android:shadowColor="#FFFFFFFF"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="取消"
+                    android:textColor="#FF666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/follower_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="#FFFFFFFF"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="选择要踢出的人"
+                    android:textColor="#FF555555"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/follower_button_commit"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/draw_round_tangle_jing_green"
+                    android:shadowColor="#FF1c3214"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="踢掉"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</FrameLayout>

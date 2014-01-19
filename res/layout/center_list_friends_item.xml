@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white_text"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/avatar_layou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/headViewImageView"
+                    style="@style/normal_item_icon" >
+                </ImageView>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/normal_item_main_text" />
+
+                    <ImageView
+                        android:id="@+id/friends_online"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/draw_round_jing_green"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/content"
+                    style="@style/normal_item_sub_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right" >
+
+            <ImageView
+                android:id="@+id/friends_follow_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/friends_add"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/friends_share_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/friends_select"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/friends_follow_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/friends_add"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/friends_follow_poke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/friends_poke"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/friends_follow_listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/friends_follow_listen"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/friends_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/friends_chat"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/new_message"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/draw_round_jing_green"
+            android:gravity="center"
+            android:shadowColor="#FF000000"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#447731"
+            android:textSize="0sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/item_deliver_line" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding
+        android:top="2dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:bottom="2dp" />
+    <corners
+        android:radius="9dp"/>
+    <!-- 圆角属性，只有shape为rectangle时，此属性才会起作用，解释一下它的子属性
+         radius：所有圆角的值，此属性他四个属性覆盖。所有字属性值的类型都是integer类型，可直接定义，也可以引用dimension属性，值应大于1，否则取值为0 -->
+    <solid
+        android:color="#FF62a946" />
+    <!-- 图片填充纯色 -->
+</shape>
+

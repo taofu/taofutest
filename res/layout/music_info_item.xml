@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#00000000" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                style="@style/normal_item_icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+           		android:layout_marginRight="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/main_text"
+                    android:textColor="#FFCCCCCC"
+                    style="@style/normal_item_main_text"/>
+
+                <TextView
+                    android:id="@+id/sub_text"
+                    android:textColor="#FF666666"
+                    style="@style/normal_item_sub_text"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sub_icon_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="40dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_kick" />
+        <ImageView
+            android:id="@+id/sub_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/friends_chat" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/deliver_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF434343" />
+
+</LinearLayout>

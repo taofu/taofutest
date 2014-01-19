@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 背景图 -->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/settings_clock_progress_bg"
+        android:top="0dp">
+
+        <!--
+        <clip>
+            <nine-patch android:src="@drawable/settings_clock_progress_bg" />
+        </clip>
+        -->
+    </item>
+    <item android:id="@android:id/progress">
+        <clip >
+            <nine-patch android:src="@drawable/settings_clock_progress" />
+        </clip>
+    </item>
+
+</layer-list>
